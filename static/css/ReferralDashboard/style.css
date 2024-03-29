@@ -22,6 +22,7 @@ i{
 }
 header{
     padding: 10px;
+    margin-top: 20px;
 }
 .navbar{
     
@@ -46,7 +47,8 @@ header{
     color:var(--font-color);
     background-color:var(--primary-color);
    border-width:0px;
-   padding:10px 20px;
+   font-size: 10px;
+   padding: 10px 15px;
    border-radius: 10px;
    font-weight: 600;
 }
@@ -148,7 +150,9 @@ hr{
     width: 50%;
 
 }
-
+.plus{
+    cursor: pointer;
+}
 .ref-link{
     margin-top: 30px;
     display: flex;
@@ -204,4 +208,116 @@ font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
+.tabel-section{
+    margin: 50px 10px;
+}
+.table-search-container{
+    display: flex;
+   align-items: center;
+    justify-content: space-between;
+}
+
+.table-entries-display input{
+    border: 1px solid #4776E6 ;
+border-radius: 10px;
+color: #4776E6;
+background-color: #e5e9ec;
+width: 50px;
+
+}
+
+.table-search{
+    display: flex;
+    flex-basis: 70%;
+    align-items: center;
+}
+.table-search input{
+    border: 1px solid #4776E6 ;
+    border-radius: 10px;
+    color: #4776E6;
+    padding: 10px;
+    flex-basis: 70%;
+   
+
+}
+.table{
+    /* background-color: #6c2613; */
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+thead{
+    /* background-color: #FFA412; */
+    background-image: linear-gradient(to top,#4776E6,#8E54E9);
+    
+    text-align: left;
+    color: var(--font-color);
+}
+tr{
+    height: 50px;
+}
+
+th{
+    font-weight: 400;
+}
+
+tbody tr{
+    
+    border-bottom: 1px solid #000000;
+
+}
+.error{
+    text-align: center;
+    color: #8E54E9;
+    padding: 20px;
+    border: 1px solid #706FE5;
+    width: 100%;
+   border-radius: 10px;
+    margin: 20px;
+}
+
+.pagination-container{
+margin-top: 30px;
+display: flex;
+} 
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-basis: 70%;
+}
+.btn1,.btn2{
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+.pagination ul{
+    display: flex;
+    gap: 5px;
+    flex-basis: 70%;
+   align-items: center;
+    justify-content: space-between;
+}
+
+
+.pagelink{
+    padding: 7px 20px;
+
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 7px 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    
+}
+
+.active{
+    background-image: linear-gradient(to top,#4776E6,#8E54E9);
+    color: white;
+}
+

@@ -160,15 +160,16 @@
         </div>
         <div class="service">
           <h3>Your Referral</h3>
-          <p>0<span>+</span>0</p>
+          <p>0<span onclick="increment1()" class="plus">+</span><span id="yref">0</span></p>
+          
         </div>
         <div class="service">
           <h3>Active Referra</h3>
-          <p>0<span>+</span>0</p>
+          <p>0<span onclick="increment2()" class="plus">+</span><span id="aref">0</span></p>
         </div>
         <div class="service">
           <h3>Total Ref. Earnings</h3>
-          <p>$0.00</p>
+          <p >$0.00</p>
         </div>
       </section>
       <section class="refer-section">
@@ -179,24 +180,56 @@
           <div class="referral-link">
             <h3>Your Referral Link</h3>
             <div class="link-container">
-              <input type="text" class="link" value="https://gobusiness.com/?refferal=ABCXYZ"/>
+              <input type="text" class="link" value="https://gobusiness.com/?refferal=ABCXYZ" readonly id="yourRef"/>
              
-                <button> <i class="fa-regular fa-copy"></i>Copy</button>
+                <button onclick="yourRefCopy()"> <i class="fa-regular fa-copy"></i>Copy</button>
              
             </div>
           </div>
           <div class="referral-code">
             <h3>Your Referral Code</h3>
             <div class="link-container">
-                <input type="text" class="link" value="ABCXYZ"/>
+                <input type="text" class="link" value="ABCXYZ" id="codeRef" readonly/>
                
-                  <button> <i class="fa-regular fa-copy"></i>Copy</button>
+                  <button onclick="refCode()"> <i class="fa-regular fa-copy"></i>Copy</button>
                
               </div>
           </div>
         </div>
       </section>
-      <section class="tabel-section"></section>
+      <section class="tabel-section">
+        <div class="table-search-container">
+         <div class="table-entries-display">
+          <span>Show</span>
+          
+            <input type="text" value="10" id="entriesInput">
+          
+          <span>Entries</span>
+         </div>
+         <div class="table-search">
+          <label for="table">Search:</label>
+          <input type="text" class="table-search-input" placeholder="Enter Name"/>
+         </div>
+        </div>
+        <div id="table">
+
+        </div>
+        <div class="pagination-container">
+        <span>Showing 1 to 10 of 57 entries</span>
+        <div class="pagination">
+         <button class="btn1" onclick="backBtn()">Previous</button>
+         <ul class="pages">
+          <li class="pagelink" onclick="activelink()" value="1">1</li>
+          <li class="pagelink" onclick="activelink()" value="2">2</li>
+          <li class="pagelink" onclick="activelink()" value="3">3</li>
+          <li class="pagelink" onclick="activelink()" value="4">4</li>
+          <li class="pagelink" onclick="activelink()" value="5">5</li>
+          <li class="pagelink" onclick="activelink()" value="6">6</li>
+         </ul>
+         <button class="btn2"  onclick="frontBtn()">Next</button>
+        </div>
+      </div>
+      </section>
     </main>
     <!-- footersection -->
     <footer>
