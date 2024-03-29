@@ -307,7 +307,7 @@ display: flex;
 
 .pagelink{
     padding: 7px 20px;
-
+cursor: pointer;
     background-color: transparent;
     color: var(--primary-color);
     padding: 7px 30px;
