@@ -20,9 +20,19 @@ const yourref=document.getElementById("yref")
 const activeref=document.getElementById("aref")
 const urlRef=document.querySelector("#yourRef");
 const urlCode=document.querySelector("#codeRef");
-console.log(urlRef.value)
+const toggleButton=document.querySelector(".toggle-button")
+const navItems=document.querySelector(".nav-items-sm")
 paginationLinks[0].classList.add("active")
-
+let display=false
+toggleButton.addEventListener("click",()=>{
+    console.log("click")
+    display=!display
+    console.log(display)
+    let toggleStyle=display?"block":"none"
+    console.log(toggleStyle)
+    navItems.style.display=toggleStyle
+    
+})
 let currentPage=1
 function activelink(){
     for (let i of paginationLinks){

@@ -324,4 +324,13 @@ cursor: pointer;
     background-image: linear-gradient(to top,#4776E6,#8E54E9);
     color: white;
 }
-
+.nav-items-sm{
+    display: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #706FE5;
+}
+button{
+    cursor: pointer;
+}
