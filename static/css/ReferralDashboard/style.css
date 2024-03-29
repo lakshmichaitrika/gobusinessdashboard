@@ -51,6 +51,10 @@ header{
    padding: 10px 15px;
    border-radius: 10px;
    font-weight: 600;
+   cursor: pointer;
+}
+.toggle-button{
+    display: none;
 }
 .search-section{
     display: flex;
